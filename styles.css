@@ -8,19 +8,89 @@ body{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 2;
 }
 .logo-nav-container {
-    width: 70%;
+    width: 85%;
+    background-color: brown;
     margin: auto;
-    margin-top: 0.5em;
+    padding: 1em;
+
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 .logo-nav-container p {
     background-color: rgb(44, 44, 182);
-    text-align: center;
 }
 .logo-nav-container img {
-    width: 30%;
+    width: 25%;
 }
+.bars__menu {
+    width: 35px;
+    height: 35px;
+    background-color: red;
+    cursor: pointer;
+}
+.bars__menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: white;
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+}
+.activeline1__bars-menu {
+transform: rotate(45deg) translate(-1px, -4px);
+}
+
+.activeline2__bars-menu {
+    opacity: 0;
+    margin-left: -30px;
+}
+.activeline3__bars-menu {
+    transform: rotate(-45deg) translate(-1px, 6px);
+}
+
+.nav {
+    background-color: beige;
+    width: 100%;
+    /*display: none*/
+    height: 0;
+    pointer-events: none;
+    overflow: hidden;
+
+    transition: all 300ms;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav.activo {
+    height: 23vh;
+    pointer-events: auto;
+}
+.nav ul {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav li {
+    list-style: none;
+    margin: 0.5em;
+}
+/*
+@media screen and (max-width:680px) {
+    .nav {
+        width: 100%;
+    }
+}*/
 .border-head {
     background-color: rgb(77, 165, 42);
     width: 100%;
