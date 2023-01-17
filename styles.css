@@ -310,7 +310,7 @@ img {
     position: relative;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 5px;
     justify-items: center;
     align-items: center;
@@ -322,7 +322,7 @@ img {
 }*/
 
 .service_uno {
-    width: 380px;
+    width: 350px;
     height: 200px;
     background-color: rgb(194, 194, 194);
     position: relative;
@@ -363,35 +363,35 @@ img {
     border-radius: 3px;
 }
 .service_dos {
-    width: 380px;
+    width: 350px;
     height: 200px;
     background-color: rgb(194, 194, 194);
     position: relative;
     border: solid 1px black;
 }
 .service_tres {
-    width: 380px;
+    width: 350px;
     height: 200px;
     background-color: rgb(194, 194, 194);
     position: relative;
     border: solid 1px black;
 }
 .service_cuatro {
-    width: 380px;
+    width: 350px;
     height: 200px;
     background-color: rgb(194, 194, 194);
     position: relative;
     border: solid 1px black;
 }
 .service_cinco {
-    width: 380px;
+    width: 350px;
     height: 200px;
     background-color: rgb(194, 194, 194);
     position: relative;
     border: solid 1px black;
 }
 .service_seis {
-    width: 380px;
+    width: 350px;
     height: 200px;
     background-color: rgb(194, 194, 194);
     position: relative;
