@@ -8,7 +8,11 @@
       name="Oficial Corporacion Tecnica"
       content="Oficial Web site of Corporacion Tecnica"
     />
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a28978a9dd.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -56,15 +60,16 @@
               <img src="/img/4.png" alt="" />
             </div>
             <!--slide images end-->
-            <!--automatic navigation start-->
-            <div class="navigation-auto">
-              <div class="auto-btn1"></div>
-              <div class="auto-btn2"></div>
-              <div class="auto-btn3"></div>
-              <div class="auto-btn4"></div>
-            </div>
-            <!--automatic navigation end-->
           </div>
+
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
           <!--manual navigation start-->
           <div class="navigation-manual">
             <label for="radio1" class="manual-btn"></label>
@@ -78,20 +83,130 @@
       </div>
 
       <div class="menu-info">
-        <h2>Bienvenidos a Corporación Técnica Web</h2>
         <p>
           Brindando confianza y el mejor servicio en instalaciones eléctricas.
         </p>
+        <button class="button-info">
+          Contactanos &nbsp<i class="fa-solid fa-arrow-right"></i>
+        </button>
       </div>
-      <div class="menu-container2"></div>
+      <div class="menu-container2">
+        <div class="titulo-servicios">
+          <div class="linea-servicios"></div>
+          <p>SERVICIOS</p>
+          <h3>Nuestros Servicios</h3>
+        </div>
+        <div class="servicios">
+          <div class="service_uno">
+            <div class="contenedor-service">
+              <i class="fa-solid fa-gears"></i>
+              <p>Instalaciones Electromecánicas</p>
+              <button class="button-service">Consulte Aquí</button>
+            </div>
+          </div>
+          <div class="service_dos">
+            <div class="contenedor-service">
+              <i class="fa-solid fa-sliders"></i>
+              <p>Tableros Automatizados</p>
+              <button class="button-service">Consulte Aquí</button>
+            </div>
+          </div>
+          <div class="service_tres">
+            <div class="contenedor-service">
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>Telefonía General</p>
+              <button class="button-service">Consulte Aquí</button>
+            </div>
+          </div>
+          <div class="service_cuatro">
+            <div class="contenedor-service">
+              <i class="fa-solid fa-ethernet"></i>
+              <p>Cableados de Redes Certificadas</p>
+              <button class="button-service">Consulte Aquí</button>
+            </div>
+          </div>
+          <div class="service_cinco">
+            <div class="contenedor-service">
+              <i class="fa-sharp fa-solid fa-wifi"></i>
+              <p>Instalaciones y Redes Wifi</p>
+              <button class="button-service">Consulte Aquí</button>
+            </div>
+          </div>
+          <div class="service_seis">
+            <div class="contenedor-service">
+              <i class="fa-solid fa-tty"></i>
+              <p>Telefonía Comunicaciones</p>
+              <button class="button-service">Consulte Aquí</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="menu-container3">
-        <h2>Solicite su Presupuesto y Asesoramiento</h2>
+        <div class="titulo-somos">
+          <div class="linea-somos"></div>
+          <p>NOSOTROS</p>
+          <h3>Quienes Somos?</h3>
+        </div>
         <p>
-          Contactenos de forma rápida a traves de nuestro WhatsApp o haciendo
-          click aquí.
+          &nbsp Somos una empresa joven integrada por profesionales con vasta
+          experiencia en el rubro eléctrico, abarcando un amplio espectro en
+          servicio de Ingeniería, instalación, montaje y automatización
+          complementando la actividad ofreciendo mantenimiento preventivo y
+          correctivo. <br /><br />
+          &nbsp Comprometidos con la calidad y los más altos estándares de
+          trabajo respetando las normativas vigentes. Estamos abocados a
+          garantizar la provisión de los recursos necesarios para que los
+          servicios brindados cumplan con las especificaciones y plazos del
+          cliente.
         </p>
       </div>
-      <div class="menu-container4"></div>
+      <div class="panel-botonesomos">
+        <button class="servicio-boton">Contacto</button>
+        <button class="consulte-boton">Servicios</button>
+      </div>
+      <div class="titulo-consulta">
+        <div class="linea-consulta"></div>
+        <p>CONSULTAS</p>
+        <h3>Contacto</h3>
+      </div>
+      <div class="menu-container4">
+        <div class="text-contact">
+          <h3>Podes consultar por Presupuesto y Asesoramiento</h3>
+          <p>
+            A traves de nuestro Whatsapp
+            <a
+              href="https://api.whatsapp.com/send?phone=+5492235929238&text=Hola,%20mucho%20gusto.%20He%20visto%20tu%20sitio%20de%20Corporaci%C3%B3n%20T%C3%A9cnica.%20Me%20interesa%20realizarte%20una%20consulta"
+              >aquí</a
+            >
+            o envianos un mail
+          </p>
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <div class="mail-contact">
+          <div class="menu-form">
+            <form action="https://formsubmit.co/francoruizgabriel@gmail.com" method="POST" class="formulario">
+              <h1 class="form-titulo">Envianos tu mensaje</h1>
+              <p>Realizá tu consulta y recibirás una respuesta a la brevedad</p>
+              <label for="" class="label-nombre">Nombre Completo*</label>
+              </br>
+              <input type="text" name="name" class="input-name" />
+              </br>
+              <label for="" class="label-correo">Correo Electrónico*</label>
+              </br>
+              <input type="text" name="email" class="input-correo" />
+              </br>
+              <label for="" class="label-mensaje">Mensaje</label>
+              </br>
+              <textarea name="comments" cols="10" rows="5" class="input-mensaje"></textarea>
+              </br>
+              <input type="submit" class="form-submit" />
+    
+              <input type="hidden" name="_next" value="./WebPage/pages/Contact/contact.html" />
+              <input type="hidden" name="_captcha" value="false" />
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer-container">
@@ -99,6 +214,7 @@
         <p>Mar del Plata, Argentina</p>
       </div>
     </footer>
+
     <script src="/script.js"></script>
     <script type="text/javascript">
       var counter = 1;

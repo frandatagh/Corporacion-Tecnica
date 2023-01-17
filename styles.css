@@ -1,6 +1,7 @@
 body{
     margin: 0;
     background-color: rgb(58, 32, 32);
+    font-family: 'Raleway', sans-serif;
 }
 .header {
     background-color: rgb(44, 44, 182);
@@ -9,9 +10,12 @@ body{
     left: 0;
     right: 0;
     z-index: 2;
+    height: 18%;
 }
+
 .logo-nav-container {
     width: 85%;
+    max-height: 65%;
     background-color: brown;
     margin: auto;
     padding: 1em;
@@ -23,9 +27,11 @@ body{
   }
 .logo-nav-container p {
     background-color: rgb(44, 44, 182);
+    min-width: 25%;
 }
 .logo-nav-container img {
-    width: 25%;
+    margin-left: 13px;
+    width: 100%;
 }
 .bars__menu {
     width: 35px;
@@ -43,13 +49,14 @@ body{
     transition: all 300ms;
 }
 .activeline1__bars-menu {
-transform: rotate(45deg) translate(-1px, -4px);
+    transform: rotate(45deg) translate(-1px, -4px);
 }
 
 .activeline2__bars-menu {
     opacity: 0;
     margin-left: -30px;
 }
+
 .activeline3__bars-menu {
     transform: rotate(-45deg) translate(-1px, 6px);
 }
@@ -72,12 +79,23 @@ transform: rotate(45deg) translate(-1px, -4px);
 .nav.activo {
     height: 23vh;
     pointer-events: auto;
-}
+    border: rgb(27, 21, 21) solid 5px;
+}/*
 .nav ul {
+    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
     
+    justify-content: flex-end;
+    align-items: center;
+}*/
+.nav ul{
+    width: 70%;
+    margin-left: -5%;
+    display: flex;
+    flex-direction: column;
+
     justify-content: flex-end;
     align-items: center;
 }
@@ -85,34 +103,42 @@ transform: rotate(45deg) translate(-1px, -4px);
     list-style: none;
     margin: 0.5em;
 }
-/*
-@media screen and (max-width:680px) {
-    .nav {
-        width: 100%;
-    }
-}*/
+.nav li a {
+    text-decoration: none;
+}
+
+.nav li:hover {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color:  rgb(141, 141, 141);
+}
+
 .border-head {
     background-color: rgb(77, 165, 42);
     width: 100%;
-    height: 5px;
+    height: 10px;
 }
 .main {
     background-color: beige;
     margin: auto;
-    margin-top: 8%;
+    margin-top: 9%;
+    
     padding-top: 1.5%;
-    width: 85%;
-    height: 1830px;
+    width: 90%;
+    height: 2830px;
     border-radius: 10px;
     margin-bottom: 2%;
     justify-content: center;
     align-items: center;
 }
+
+
+
 .menu-container1 {
     margin:auto;
     background-color: brown;
     width: 98%;
-    height: 65vh;
+    max-height: 35%;
     border-radius: 10px;
     margin-bottom: 5px;
     justify-content: center;
@@ -120,17 +146,17 @@ transform: rotate(45deg) translate(-1px, -4px);
     display: flex;
 }
 .slider {
-    width: 890px;
-    height: 500px;
+    width: 100%;
+    height: 10%;
     border-radius: 10px;
     overflow: hidden;
 }
 .slides {
     width: 500%;
-    height: 500px;
+    height: 100%;
     display: flex;
 }
-.slides input {
+.slider input {
     display: none;
 }
 .slide{
@@ -139,7 +165,7 @@ transform: rotate(45deg) translate(-1px, -4px);
 }
 
 img {
-    object-fit: cover;
+
     width: 100%;
     height: 100%;
 }
@@ -147,8 +173,8 @@ img {
 /*css for manual slide navigation*/
 .navigation-manual {
     position: absolute;
-    width: 890px;
-    margin-top: -20px;
+    width: 90%;
+    margin-top: -5%;
     display: flex;
     justify-content: center;
 }
@@ -166,7 +192,7 @@ img {
 .manual-btn:hover {
     background: black;
 }
-
+#radio1:checked ~
 #radio1:checked ~ .first{
     margin-left: 0;
 }
@@ -184,10 +210,10 @@ img {
 
 .navigation-auto {
     position: absolute;
+    width: 90%;
+    margin-top: -5%;
     display: flex;
-    width: 890px;
     justify-content: center;
-    margin-top: 480px;
 }
 .navigation-auto div {
     border: 2px solid yellow;
@@ -217,52 +243,334 @@ img {
 .menu-info {
     margin: auto;
     background-color: rgb(35, 185, 15);
-    width: 100%;
-    height: 11%;
+    width: 90%;
+    height:5%;
     margin-bottom: 1%;
-    justify-content: center;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    
+
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    border: 3px rgb(10, 9, 9) solid;
     color: white;
-}
-.menu-info h2 {
-    padding-top: 2rem;
-    font-size: 3em;
 }
 .menu-info p {
     font-size: 1.5em;
 }
+.button-info {
+
+    border-radius: 6px;
+    border-color: grey;
+    padding: 7px;
+    color: white;
+    background-color: blueviolet;
+}
+
 .menu-container2 {
     margin: auto;
     background-color: blue;
+    width: 100%;
+    
+    margin-bottom: 200px;
+}
+.titulo-servicios {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.titulo-servicios p{
+    position: absolute;
+    color: rgb(53, 53, 53);
+    font-size: 0.7em;
+    top: -5px;
+    left: 27px;
+}
+.titulo-servicios h3 {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    top: -8px;
+    left: 25px;
+}
+.linea-servicios {
+    position: absolute;
+    width: 1.5%;
+    height: 100%;
+    background-color: blueviolet;
+}
+.servicios {
+    width: 100%;
+    height: 90%;
+    background-color: brown;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
+}
+
+/* para ver si se adapta al div padre
+.servicios div{
+    opacity: 50%;
+}*/
+
+.service_uno {
+    width: 380px;
+    height: 200px;
+    background-color: rgb(194, 194, 194);
+    position: relative;
+    border: solid 1px black;
+}
+.contenedor-service{
     width: 90%;
-    height: 500px;
-    border-radius: 10px;
-    margin-bottom: 1%;
+    height: 90%;
+    background-color: rgb(194, 194, 194);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: dashed 4px white;
+}
+.contenedor-service i {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 10px;
+}
+.contenedor-service p {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+.contenedor-service button {
+    margin-top: 10px;
+    width: 40%;
+    height: 15%;
+    background-color: blueviolet;
+    color: white;
+    border-color: white;
+    border-radius: 3px;
+}
+.service_dos {
+    width: 380px;
+    height: 200px;
+    background-color: rgb(194, 194, 194);
+    position: relative;
+    border: solid 1px black;
+}
+.service_tres {
+    width: 380px;
+    height: 200px;
+    background-color: rgb(194, 194, 194);
+    position: relative;
+    border: solid 1px black;
+}
+.service_cuatro {
+    width: 380px;
+    height: 200px;
+    background-color: rgb(194, 194, 194);
+    position: relative;
+    border: solid 1px black;
+}
+.service_cinco {
+    width: 380px;
+    height: 200px;
+    background-color: rgb(194, 194, 194);
+    position: relative;
+    border: solid 1px black;
+}
+.service_seis {
+    width: 380px;
+    height: 200px;
+    background-color: rgb(194, 194, 194);
+    position: relative;
+    border: solid 1px black;
 }
 .menu-container3 {
-    margin: auto;
-    background-color: rgb(155, 91, 49);
+    
+    background-color: rgb(49, 155, 49);
     width: 100%;
-    height: 200px;
-    margin-bottom: 1%;
+    height: 305px;
+    
+    margin-top: -130px;
     justify-content: center;
     text-align: center;
     color: white;
+    position: relative;
 }
-.menu-container3 h2 {
-    padding-top: 2rem;
-    font-size: 3em;
-}
+
+
 .menu-container3 p {
-    font-size: 1.5em;
+    position: absolute;
+    text-align: justify;
+    font-size: calc(0.8em + 0.8vw);
+    line-height: 1em;
+    padding: 0.8em;
+    margin: 0.8em;
 }
+.titulo-somos {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.titulo-somos p{
+    position: absolute;
+    color: rgb(53, 53, 53);
+    font-size: 0.7em;
+    top: -12px;
+    left: 10px;
+}
+.titulo-somos h3 {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    top: -8px;
+    left: 25px;
+}
+.linea-somos {
+    position: absolute;
+    width: 1.5%;
+    height: 100%;
+    background-color: blueviolet;
+}
+.panel-botonesomos{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(49, 155, 49);
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+.panel-botonesomos button {
+    width: 100px;
+    height: 25px;
+    margin-right: 40px;
+    background-color: grey;
+    color: white;
+    border-color: white;
+}
+/**/
+.titulo-consulta {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: -15px;
+}
+.titulo-consulta p{
+    position: absolute;
+    color: rgb(53, 53, 53);
+    font-size: 0.7em;
+    top: -6px;
+    left: 27px;
+}
+.titulo-consulta h3 {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    top: -8px;
+    left: 25px;
+}
+.linea-consulta {
+    position: absolute;
+    width: 1.5%;
+    height: 100%;
+    background-color: blueviolet;
+}
+/**/
+
 .menu-container4 {
     margin: auto;
+    margin-top: 20px;
     background-color: rgb(255, 0, 119);
     width: 90%;
-    height: 300px;
+    height: 550px;
     border-radius: 10px;
 }
+.text-contact {
+    width: 100%;
+    height: 100px;
+    
+    
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-contact h3 {
+    color: black;
+    
+}
+.text-contact p {
+    color: black;
+}
+.text-contact i {
+    color: black;
+    position: absolute;
+    font-size: 2em;
+    
+}
+.mail-contact {
+    width: 100%;
+    height: 70%;
+    background-color: brown;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* codigo pegado de franco ruiz*/
+.menu-form{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    margin-top: 15px;
+    background-color: rgb(189, 189, 189);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formulario{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height:0.7em;
+}
+.formulario p{
+    font-size: small;
+    margin-top: -7px;
+    margin-bottom: 50px;
+}
+.formulario input {
+    width: 90%;
+    height: 20px;
+    margin-top: -5px;
+}
+.input-mensaje {
+    width: 90%;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+.form-submit {
+    background-color: blue;
+}
+/* codigo pegado de franco ruiz*/
+
 .footer {
     background-color: rgb(206, 17, 17);
     font-family: "Times New Roman", Times, serif;
@@ -270,6 +578,33 @@ img {
     padding: 5vh 0 5vh;
     text-align: center;
 }
-.footer p{
-    background-color: rgb(206, 17, 17);
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1275px) {
+    .main {
+        margin-top: 10%;
+    }
+}
+@media screen and (max-width: 998px) {
+    .main {
+        margin-top: 15%;
+    }
+  
+}
+
+@media screen and (max-width: 640px) {
+    .main {
+        margin-top: 18%;
+    }
+
+    
+}
+
+@media screen and (max-width: 486px) {
+    .main {
+        margin-top: 21%;
+    }
+
 }
