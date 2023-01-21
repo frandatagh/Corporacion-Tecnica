@@ -1,24 +1,28 @@
 body{
     margin: 0;
-    background-color: rgb(58, 32, 32);
+    background-color: #3F403F;
     font-family: 'Raleway', sans-serif;
+    font-size: 16px;
 }
 .header {
-    background-color: rgb(44, 44, 182);
+    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 2;
-    height: 18%;
+    height: 85px;
+}
+button{
+    cursor: pointer;
 }
 
 .logo-nav-container {
     width: 85%;
     max-height: 65%;
-    background-color: brown;
+    background-color: rgb(255, 255, 255);
     margin: auto;
-    padding: 1em;
+    padding: 0.4em;
 
     display: flex;
     flex-flow:row wrap;
@@ -26,7 +30,7 @@ body{
     align-items: center;
   }
 .logo-nav-container p {
-    background-color: rgb(44, 44, 182);
+    
     min-width: 25%;
 }
 .logo-nav-container img {
@@ -36,20 +40,21 @@ body{
 .bars__menu {
     width: 35px;
     height: 35px;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     cursor: pointer;
 }
 .bars__menu span {
     display: block;
     width: 100%;
-    height: 2px;
-    background: white;
+    height: 3px;
+    background: rgb(0, 0, 0);
     margin-top: 6px;
     transform-origin: 0px 100%;
     transition: all 300ms;
+    border-radius: 5px;
 }
 .activeline1__bars-menu {
-    transform: rotate(45deg) translate(-1px, -4px);
+    transform: rotate(45deg) translate(-1px, -2px);
 }
 
 .activeline2__bars-menu {
@@ -62,7 +67,7 @@ body{
 }
 
 .nav {
-    background-color: beige;
+    background-color: white;
     width: 100%;
     /*display: none*/
     height: 0;
@@ -77,9 +82,9 @@ body{
 
 }
 .nav.activo {
-    height: 23vh;
+    height: 22vh;
     pointer-events: auto;
-    border: rgb(27, 21, 21) solid 5px;
+    border: black solid 4px;
 }/*
 .nav ul {
     width: 90%;
@@ -91,8 +96,6 @@ body{
     align-items: center;
 }*/
 .nav ul{
-    width: 70%;
-    margin-left: -5%;
     display: flex;
     flex-direction: column;
 
@@ -105,6 +108,8 @@ body{
 }
 .nav li a {
     text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 .nav li:hover {
@@ -113,19 +118,15 @@ body{
     background-color:  rgb(141, 141, 141);
 }
 
-.border-head {
-    background-color: rgb(77, 165, 42);
-    width: 100%;
-    height: 10px;
-}
+
 .main {
-    background-color: beige;
+    background-color: #9FB8AD;
     margin: auto;
     margin-top: 9%;
     
     padding-top: 1.5%;
     width: 90%;
-    height: 2830px;
+    height: 2400px;
     border-radius: 10px;
     margin-bottom: 2%;
     justify-content: center;
@@ -242,7 +243,7 @@ img {
 
 .menu-info {
     margin: auto;
-    background-color: rgb(35, 185, 15);
+    background-color: #E6E8E6;
     width: 80%;
     height:5%;
     margin-bottom: 1%;
@@ -252,14 +253,15 @@ img {
 
     justify-content: space-between;
     align-items: center;
-    padding-left: 30px;
+    padding-left: 20px;
     padding-right: 30px;
     
-    border: 3px rgb(10, 9, 9) solid;
-    color: white;
+    border: 3px #3F403F solid;
+    border-radius: 5px;
+    color: black;
 }
 .menu-info p {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 .button-info {
 
@@ -267,8 +269,13 @@ img {
     border-color: grey;
     padding: 7px;
     color: white;
-    background-color: blueviolet;
+    background-color: #475841;
 }
+.button-info:hover {
+    background-color: #3F403F;
+}
+
+
 
 .menu-container2 {
     margin: auto;
@@ -280,7 +287,7 @@ img {
 .titulo-servicios {
     width: 100%;
     height: 50px;
-    background-color: rgb(255, 255, 255);
+    background-color: #E6E8E6;
     position: relative;
 }
 .titulo-servicios p{
@@ -301,13 +308,15 @@ img {
     position: absolute;
     width: 1.5%;
     height: 100%;
-    background-color: blueviolet;
+    background-color: #475841;
 }
 .servicios {
     width: 100%;
     height: 90%;
-    background-color: brown;
+    background-image: url(./img/fondo-ct.png);
     position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -324,14 +333,55 @@ img {
 .service_uno {
     width: 300px;
     height: 200px;
-    background-color: rgb(194, 194, 194);
+    background-color: #3F403F;
     position: relative;
     border: solid 1px black;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
+-moz-box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
+box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
+}
+.service_uno:hover{
+    background-color: #475841;
+    transition: 0.3s;
+    border-color: #3F403F;
+}
+.service_uno:hover button {
+    background-color: rgb(129, 129, 129);
+    transition: 0.5s;
+    border-color: #E6E8E6;
+    height: 14%;
+}
+.service_uno:hover i{
+    opacity: 30%;
+    font-size: 3.5em;
+    transition: 0.3s;
+}
+.service_uno:hover .contenedor-service {
+    opacity: 95%;
+    border-color: #9FB8AD;
+    background: rgb(36,0,0);
+    background: radial-gradient(circle, rgba(36,0,0,1) 0%, rgba(35,111,117,0.16290266106442575) 75%, rgba(0,236,255,0) 100%);
+}
+.show-text{
+    font-size:smaller !important;
+    color: rgb(255, 255, 255) !important;
+    position: absolute;
+    text-align: center;
+    opacity: 0%;
+}
+.service_uno:hover .show-text{
+    opacity: 95%;
+    transition: 0.8s;
+}
+.service_uno:hover .text-service-uno{
+    opacity: 10%;
+    transition: 0.3s;
 }
 .contenedor-service{
     width: 90%;
     height: 90%;
-    background-color: rgb(194, 194, 194);
+    background-color: #3F403F;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -341,12 +391,14 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: dashed 4px white;
+    border: dashed 4px #E6E8E6;
+    border-radius: 8px;
 }
 .contenedor-service i {
     font-size: 3em;
     color: white;
     margin-bottom: 10px;
+    
 }
 .contenedor-service p {
     color: white;
@@ -357,7 +409,7 @@ img {
     margin-top: 10px;
     width: 40%;
     height: 15%;
-    background-color: blueviolet;
+    background-color: #475841;
     color: white;
     border-color: white;
     border-radius: 3px;
@@ -365,43 +417,224 @@ img {
 .service_dos {
     width: 300px;
     height: 200px;
-    background-color: rgb(194, 194, 194);
+    background-color: #3F403F;
     position: relative;
     border: solid 1px black;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
+-moz-box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
+box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
 }
+/*hover servicio numero dos*/
+.service_dos:hover{
+    background-color: #475841;
+    transition: 0.3s;
+    border-color: #3F403F;
+}
+.service_dos:hover button {
+    background-color: rgb(129, 129, 129);
+    transition: 0.5s;
+    border-color: #E6E8E6;
+    height: 14%;
+}
+.service_dos:hover i{
+    opacity: 30%;
+    font-size: 3.5em;
+    transition: 0.3s;
+}
+.service_dos:hover .contenedor-service {
+    opacity: 95%;
+    border-color: #9FB8AD;
+    background: rgb(36,0,0);
+    background: radial-gradient(circle, rgba(36,0,0,1) 0%, rgba(35,111,117,0.16290266106442575) 75%, rgba(0,236,255,0) 100%);
+}
+.service_dos:hover .show-text{
+    opacity: 95%;
+    transition: 0.8s;
+}
+.service_dos:hover .text-service-uno{
+    opacity: 10%;
+    transition: 0.3s;
+}
+/*fin service dos*/
+
 .service_tres {
     width: 300px;
     height: 200px;
-    background-color: rgb(194, 194, 194);
+    background-color: #3F403F;
     position: relative;
     border: solid 1px black;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
+-moz-box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
+box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
 }
+/*hover service tres*/
+.service_tres:hover{
+    background-color: #475841;
+    transition: 0.3s;
+    border-color: #3F403F;
+}
+.service_tres:hover button {
+    background-color: rgb(129, 129, 129);
+    transition: 0.5s;
+    border-color: #E6E8E6;
+    height: 14%;
+}
+.service_tres:hover i{
+    opacity: 30%;
+    font-size: 3.5em;
+    transition: 0.3s;
+}
+.service_tres:hover .contenedor-service {
+    opacity: 95%;
+    border-color: #9FB8AD;
+    background: rgb(36,0,0);
+    background: radial-gradient(circle, rgba(36,0,0,1) 0%, rgba(35,111,117,0.16290266106442575) 75%, rgba(0,236,255,0) 100%);
+}
+.service_tres:hover .show-text{
+    opacity: 95%;
+    transition: 0.8s;
+}
+.service_tres:hover .text-service-uno{
+    opacity: 10%;
+    transition: 0.3s;
+}
+/*fin de hover*/
 .service_cuatro {
     width: 300px;
     height: 200px;
-    background-color: rgb(194, 194, 194);
+    background-color: #3F403F;
     position: relative;
     border: solid 1px black;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
+-moz-box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
+box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
 }
+/*hover service cuatro*/
+.service_cuatro:hover{
+    background-color: #475841;
+    transition: 0.3s;
+    border-color: #3F403F;
+}
+.service_cuatro:hover button {
+    background-color: rgb(129, 129, 129);
+    transition: 0.5s;
+    border-color: #E6E8E6;
+    height: 14%;
+}
+.service_cuatro:hover i{
+    opacity: 30%;
+    font-size: 3.5em;
+    transition: 0.3s;
+}
+.service_cuatro:hover .contenedor-service {
+    opacity: 95%;
+    border-color: #9FB8AD;
+    background: rgb(36,0,0);
+    background: radial-gradient(circle, rgba(36,0,0,1) 0%, rgba(35,111,117,0.16290266106442575) 75%, rgba(0,236,255,0) 100%);
+}
+.service_cuatro:hover .show-text{
+    opacity: 95%;
+    transition: 0.8s;
+}
+.service_cuatro:hover .text-service-uno{
+    opacity: 10%;
+    transition: 0.3s;
+}
+/*fin de hover*/
 .service_cinco {
     width: 300px;
     height: 200px;
-    background-color: rgb(194, 194, 194);
+    background-color: #3F403F;
     position: relative;
     border: solid 1px black;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
+-moz-box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
+box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
 }
+/*hover service cinco*/
+.service_cinco:hover{
+    background-color: #475841;
+    transition: 0.3s;
+    border-color: #3F403F;
+}
+.service_cinco:hover button {
+    background-color: rgb(129, 129, 129);
+    transition: 0.5s;
+    border-color: #E6E8E6;
+    height: 14%;
+}
+.service_cinco:hover i{
+    opacity: 30%;
+    font-size: 3.5em;
+    transition: 0.3s;
+}
+.service_cinco:hover .contenedor-service {
+    opacity: 95%;
+    border-color: #9FB8AD;
+    background: rgb(36,0,0);
+    background: radial-gradient(circle, rgba(36,0,0,1) 0%, rgba(35,111,117,0.16290266106442575) 75%, rgba(0,236,255,0) 100%);
+}
+.service_cinco:hover .show-text{
+    opacity: 95%;
+    transition: 0.8s;
+}
+.service_cinco:hover .text-service-uno{
+    opacity: 10%;
+    transition: 0.3s;
+}
+/*fin de hover*/
 .service_seis {
     width: 300px;
     height: 200px;
-    background-color: rgb(194, 194, 194);
+    background-color: #3F403F;
     position: relative;
     border: solid 1px black;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
+-moz-box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
+box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
 }
+/*hover service seis*/
+.service_seis:hover{
+    background-color: #475841;
+    transition: 0.3s;
+    border-color: #3F403F;
+}
+.service_seis:hover button {
+    background-color: rgb(129, 129, 129);
+    transition: 0.5s;
+    border-color: #E6E8E6;
+    height: 14%;
+}
+.service_seis:hover i{
+    opacity: 30%;
+    font-size: 3.5em;
+    transition: 0.3s;
+}
+.service_seis:hover .contenedor-service {
+    opacity: 95%;
+    border-color: #9FB8AD;
+    background: rgb(36,0,0);
+    background: radial-gradient(circle, rgba(36,0,0,1) 0%, rgba(35,111,117,0.16290266106442575) 75%, rgba(0,236,255,0) 100%);
+}
+.service_seis:hover .show-text{
+    opacity: 95%;
+    transition: 0.8s;
+}
+.service_seis:hover .text-service-uno{
+    opacity: 10%;
+    transition: 0.3s;
+}
+/*fin de hover*/
 .menu-container3 {
     
-    background-color: rgb(49, 155, 49);
+    background-color: #475841;
     width: 100%;
-    height: 305px;
+    height: 340px;
     
     margin-top: -130px;
     justify-content: center;
@@ -424,6 +657,7 @@ img {
     height: 50px;
     background-color: rgb(255, 255, 255);
     position: relative;
+
 }
 .titulo-somos p{
     position: absolute;
@@ -443,29 +677,34 @@ img {
     position: absolute;
     width: 1.5%;
     height: 100%;
-    background-color: blueviolet;
+    background-color: #475841;
 }
 .panel-botonesomos{
     width: 100%;
     height: 50px;
-    background-color: rgb(49, 155, 49);
+    background-color: #475841;
     display: flex;
     flex-direction: row-reverse;
     
 }
 .panel-botonesomos button {
-    width: 100px;
-    height: 25px;
+    width: 25%;
+    height: 35px;
     margin-right: 40px;
     background-color: grey;
     color: white;
     border-color: white;
 }
+.panel-botonesomos button:hover {
+    background-color: #3F403F;
+    color: white;
+    border-color: #475841;
+}
 /**/
 .titulo-consulta {
     width: 100%;
     height: 50px;
-    background-color: rgb(255, 255, 255);
+    background-color: #E6E8E6;
     position: relative;
     margin-top: 35px;
     margin-bottom: -15px;
@@ -488,14 +727,14 @@ img {
     position: absolute;
     width: 1.5%;
     height: 100%;
-    background-color: blueviolet;
+    background-color: #475841;
 }
 /**/
 
 .menu-container4 {
     margin: auto;
     margin-top: 20px;
-    background-color: rgb(255, 0, 119);
+    background-color: #3F403F;
     width: 90%;
     height: 550px;
     border-radius: 10px;
@@ -503,46 +742,53 @@ img {
 .text-contact {
     width: 100%;
     height: 100px;
+    padding-top: 2px;
+    padding-bottom: 12px;
     
     
-    background-color: yellow;
+    background-color: #3F403F;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 10px 10px 0px 0px;
 }
 .text-contact h3 {
-    color: black;
-    
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
 }
 .text-contact p {
-    color: black;
+    color: white;
+    font-size: 0.8rem;
 }
 .text-contact i {
-    color: black;
+    color: white;
     position: absolute;
     font-size: 2em;
-    
+    padding-top: 1.1em;
 }
 .mail-contact {
     width: 100%;
     height: 70%;
-    background-color: brown;
+    background-image: url(./img/fondo-ct.png);
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
 /* codigo pegado de franco ruiz*/
 .menu-form{
-    width: 70%;
-    height: 100%;
+    width: 85%;
+    height: 95%;
     margin: auto;
     margin-top: 15px;
-    background-color: rgb(189, 189, 189);
+    background-color: #9FB8AD;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 3px #3F403F solid;
 }
 .formulario{
     display:flex;
@@ -550,11 +796,14 @@ img {
     justify-content: center;
     align-items: center;
     line-height:0.7em;
+    padding: 20px;
 }
 .formulario p{
-    font-size: small;
-    margin-top: -7px;
-    margin-bottom: 50px;
+    font-size: 0.7rem;
+    margin-top: -1px;
+    margin-bottom: 30px;
+    text-indent: 1em;
+    text-align: justify;
 }
 .formulario input {
     width: 90%;
@@ -566,13 +815,23 @@ img {
     margin-top: -5px;
     margin-bottom: 10px;
 }
+.form-titulo {
+    font-size: 1.5rem;
+}
 .form-submit {
-    background-color: blue;
+    background-color: #475841;
+    color: white;
+    border-color: #E6E8E6;
+}
+.form-submit:hover {
+    background-color: #CED0CE;
+    color: rgb(73, 73, 73);
+    border-color: #475841;
 }
 /* codigo pegado de franco ruiz*/
 
 .footer {
-    background-color: rgb(206, 17, 17);
+    background-color: #475841;
     font-family: "Times New Roman", Times, serif;
     color: rgb(255, 255, 255);
     padding: 5vh 0 5vh;
@@ -584,27 +843,41 @@ img {
 
 @media screen and (max-width: 1275px) {
     .main {
+        height: 2250px;
         margin-top: 10%;
+    }
+}
+@media screen and (max-width: 1275px) {
+    /*los servicios se dividen en dos columnas*/
+    .main {
+        height: 2420px;
+        margin-top: 12%;
     }
 }
 @media screen and (max-width: 998px) {
     .main {
-        margin-top: 15%;
+        margin-top: 16%;
     }
   
+}
+@media screen and (max-width: 690px) {
+    /*los servicios se dividen en una columna*/
+    .main {
+        height: 2910px;
+    }   
 }
 
 @media screen and (max-width: 640px) {
     .main {
-        margin-top: 18%;
-    }
-
-    
+        margin-top: 20%;
+        height: 2870px;
+    }   
 }
 
-@media screen and (max-width: 486px) {
+@media screen and (max-width: 500px) {
     .main {
-        margin-top: 21%;
+        margin-top: 25%;
+        height: 2800px;
     }
 
 }
