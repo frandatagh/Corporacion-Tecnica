@@ -182,7 +182,7 @@ img {
 /*css for manual slide navigation*/
 .navigation-manual {
     position: absolute;
-    width: 90%;
+    width: 65%;
     margin-top: -5%;
     display: flex;
     justify-content: center;
@@ -219,13 +219,13 @@ img {
 
 .navigation-auto {
     position: absolute;
-    width: 90%;
+    width: 65%;
     margin-top: -5%;
     display: flex;
     justify-content: center;
 }
 .navigation-auto div {
-    border: 2px solid yellow;
+    border: 2px solid rgb(105, 105, 105);
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
@@ -269,7 +269,7 @@ img {
     color: black;
 }
 .menu-info p {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 .button-info {
 
@@ -671,7 +671,7 @@ box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
 .menu-container3 p {
     position: absolute;
     text-align: justify;
-    font-size: calc(0.8em + 0.8vw);
+    font-size: calc(0.73em + 0.73vw);
     line-height: 1em;
     padding: 0.8em;
     margin: 0.8em;
@@ -693,7 +693,7 @@ box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
 .titulo-somos h3 {
     position: absolute;
     color: rgb(0, 0, 0);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     top: -8px;
     left: 25px;
 }
@@ -714,10 +714,12 @@ box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
 .panel-botonesomos button {
     width: 25%;
     height: 35px;
-    margin-right: 40px;
+    margin: auto;
+    margin-top: -40px;
     background-color: grey;
     color: white;
     border-color: white;
+    z-index: 2;
 }
 .panel-botonesomos button:hover {
     background-color: #3F403F;
@@ -780,18 +782,18 @@ box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
 .text-contact h3 {
     color: white;
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: center;
 }
 .text-contact p {
     color: white;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 .text-contact i {
     color: white;
     position: absolute;
     font-size: 2em;
-    padding-top: 1.1em;
+    padding-top: 0.5em;
 }
 .mail-contact {
     width: 100%;
@@ -840,7 +842,7 @@ box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
     margin-bottom: 10px;
 }
 .form-titulo {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 .form-submit {
     background-color: #475841;
@@ -848,9 +850,9 @@ box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
     border-color: #E6E8E6;
 }
 .form-submit:hover {
-    background-color: #CED0CE;
-    color: rgb(73, 73, 73);
-    border-color: #475841;
+    background-color: #3F403F;
+    color: white;
+    border-color: #3F403F;
 }
 /* codigo pegado de franco ruiz*/
 
@@ -897,6 +899,12 @@ box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
         margin-top: 11%;
         height: 2870px;
     }   
+    .text-contact i {
+        padding-top: 1.3em;
+    }
+    .panel-botonesomos button {
+        margin-top: -20px;  
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -904,5 +912,20 @@ box-shadow: 0px 3px 18px 1px rgba(0,0,0,0.74);
         margin-top: 13%;
         height: 2800px;
     }
+    .panel-botonesomos button {
+        margin-top: -10px;  
+    }
 
+}
+@media screen and (max-width: 440px) {
+    .main {
+        margin-top: 16%;
+        height: 2750px;
+    }
+    .text-contact i {
+        padding-top: 1.3em;
+    }
+    .panel-botonesomos button {
+        margin-top: 0px;  
+    }
 }
