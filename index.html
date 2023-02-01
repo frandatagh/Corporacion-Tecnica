@@ -31,9 +31,9 @@
         <nav class="nav">
           <ul class="ul">
             <li class="li"><a href="" class="a">Inicio</a></li>
-            <li class="li"><a href="" class="a">Servicios</a></li>
-            <li class="li"><a href="" class="a">Contacto</a></li>
-            <li class="li"><a href="" class="a">Nosotros</a></li>
+            <li class="li"><a href="#servicios" class="a">Servicios</a></li>
+            <li class="li"><a href="#contacto" class="a">Contacto</a></li>
+            <li class="li"><a href="#nosotros" class="a">Nosotros</a></li>
           </ul>
         </nav>
       </div>
@@ -91,79 +91,84 @@
         <p>
           Brindando confianza con servicios y soluciones a medida, personalizadas según sus necesidades.
         </p>
-        <button class="button-info">
-          Contactanos &nbsp<i class="fa-solid fa-arrow-right"></i>
-        </button>
+        <a href="#contacto">
+          <button class="button-info">
+            Contactanos &nbsp<i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </a>
         
       </div>
       <div class="menu-container2">
-        <div class="titulo-servicios">
+        <div class="titulo-servicios" id="servicios">
           <div class="linea-servicios"></div>
           <p>SERVICIOS</p>
           <h3>Nuestros Servicios</h3>
         </div>
         <div class="servicios">
           <div class="service_uno">
-            <div class="contenedor-service">
+            <a href="#contacto"><div class="contenedor-service">
               <i class="fa-solid fa-gears"></i>
               <p class="text-service-uno">Instalaciones Electromecánicas</p>
       
               <p class="show-text"> Diseño e instalación de toda la infraestructura eléctrica y mecánica necesaria para garantizar el correcto funcionamiento de los equipos de la empresa.</p>
               <button class="button-service">Consulte Aquí</button>
-            </div>
+            </div></a>
           </div>
           <div class="service_dos">
+            <a href="#contacto">
             <div class="contenedor-service">
               <i class="fa-solid fa-sliders"></i>
               <p class="text-service-uno">Tableros Automatizados</p>
               <p class="show-text">Tableros de automatización en diferentes dispositivos eléctricos que permiten controlar el funcionamiento de las máquinas industriales.</p>
               <button class="button-service">Consulte Aquí</button>
-            </div>
+            </div></a>
           </div>
           <div class="service_tres">
+            <a href="#contacto">
             <div class="contenedor-service">
               <i class="fa-solid fa-phone-volume"></i>
               <p class="text-service-uno">Telefonía General</p>
               <p class="show-text">Instalación de telefonía analógicas y digitales. Conexiones en exterior y en interior.</p>
               <button class="button-service">Consulte Aquí</button>
-            </div>
+            </div></a>
           </div>
+
           <div class="service_cuatro">
-            <div class="contenedor-service">
+            <a href="#contacto"><div class="contenedor-service">
               <i class="fa-solid fa-ethernet"></i>
               <p class="text-service-uno">Cableados de Redes Certificadas</p>
               <p class="show-text">Rendimiento en la transmisión de un sistema de cableado instalado con un estándar determinado.
                 Garantía y mayor valor a su sistema de redes.
               </p>
               <button class="button-service">Consulte Aquí</button>
-            </div>
+            </div></a>
           </div>
           <div class="service_cinco">
-            <div class="contenedor-service">
+            <a href="#contacto"><div class="contenedor-service">
               <i class="fa-sharp fa-solid fa-wifi"></i>
               <p class="text-service-uno">Instalaciones y Redes Wifi</p>
               <p class="show-text">Diseño de red. Trabajamos en el desarrollo, el rendimiento y la optimización de Redes Wifi y Land.</p>
               <button class="button-service">Consulte Aquí</button>
-            </div>
+            </div></a>
           </div>
           <div class="service_seis">
-            <div class="contenedor-service">
+            <a href="#contacto"><div class="contenedor-service">
               <i class="fa-solid fa-tty"></i>
               <p class="text-service-uno">Telefonía Comunicaciones</p>
               <p class="show-text">Establecemos instalaciones de comunicación funcionales de acuerdo a la relacion entre la empresa, proveedores y clientes.</p>
               <button class="button-service">Consulte Aquí</button>
-            </div>
+            </div></a>
           </div>
         </div>
       </div>
       <div class="menu-container3">
-        <div class="titulo-somos">
+        <div class="titulo-somos" id="nosotros">
           <div class="linea-somos"></div>
           <p>NOSOTROS</p>
           <h3>Quienes Somos?</h3>
         </div>
         <p>
-          &nbsp Somos una empresa joven integrada por profesionales con vasta
+          &nbsp Somos una empresa de Mar del Plata integrada por profesionales con vasta
           experiencia en el rubro eléctrico, abarcando un amplio espectro en
           servicio de Ingeniería, instalación, montaje y automatización
           complementando la actividad ofreciendo mantenimiento preventivo y
@@ -176,8 +181,8 @@
         </p>
       </div>
       <div class="panel-botonesomos">
-        <button class="servicio-boton">Contacto</button>
-        <button class="consulte-boton">Servicios</button>
+        <button class="servicio-boton"><a href="#contacto">Contacto</a></button>
+        <button class="consulte-boton"><a href="#servicios">Servicios</a></button>
       </div>
       <div class="titulo-consulta">
         <div class="linea-consulta"></div>
@@ -185,7 +190,7 @@
         <h3>Contacto</h3>
       </div>
       <div class="menu-container4">
-        <div class="text-contact">
+        <div class="text-contact" id="contacto">
           <h3>Podes consultar por Presupuesto y Asesoramiento</h3>
           <p>
             A traves de nuestro Whatsapp

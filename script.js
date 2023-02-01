@@ -23,16 +23,3 @@ const nav = document.querySelector(".nav");
 nav.classList.toggle("activo");
 */
 /*probando js*/
-
-var lastScrollTop = 0;
-$(window).scroll(function (event) {
-  var st = $(this).scrollTop();
-  if (st > lastScrollTop) {
-    // downscroll code
-    document.getElementById("barra-contacto").style.display = "none";
-  } else {
-    // upscroll code
-    document.getElementById("barra-contacto").style.display = "";
-  }
-  lastScrollTop = st;
-});
